@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #0c0b0b;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* list container styling */
+.container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.card{
+  height: 30vh;
+  width: clamp(150px, 95vw, 250px);
+  box-shadow: 0 0 0.5rem rgb(21 158 237);
+  background-color: #112511;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: .5rem;
+}
+
+.album-title{
+  height: 60%;
+  top:.6rem;
+  overflow: hidden;
+  position: relative;
+  transition: 200ms ease-in-out transform;
+}
+
+.card:hover{
+  transform: scale(1.1);
+}
+
+.btn-div{
+  height: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.delete-btn{
+  height: 3rem;
+  width: 5rem;
+  border-radius: 20%;
+  background-color: #380202;
+  font-size: 0.9rem;
+  color: #dbd3d4;
+  font-weight: bold;
+}
+
+/* Add Album and Update Album styling */
+.album-container{
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-container{
+  height: 40vh;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20%;
+  box-shadow: 0 0 0.5rem rgb(21 158 237);
+  gap: 1rem;
+}
+.album-form{
+  font-size: 1.7rem;
+  color: darkcyan;
+  font-weight: bolder;
+}
+
+.form-field{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: darkolivegreen;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.input-div{
+  height: 2.5rem;
+  width: 30vw;
+  border-radius: 13%;
+}
+
+.btn-field{
+  height: 3rem;
+  width: 5rem;
+  border-radius: 20%;
+  background-color: #877016;
+  font-size: 0.9rem;
+  color: #5d1623;
+  font-weight: bold;
+}
+
+/* Navbar styling */
+
+.app-header{
+  height:20vh;
+  padding: 1.7rem;
+}
+
+.header-div{
+  position: relative;
+  top: 1rem;
+  color:rgb(82, 3, 3);
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-album{
+  position: relative;
+  right: 4rem;
+  font-size:1rem;
+  width: 6rem;
+  border-radius: 20%;
+  background-color: #cba408;
+}
